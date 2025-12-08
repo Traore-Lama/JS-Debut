@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 1 - JavaScript</title>
+</head>
+<body>
+<h1>TP 1 Exo 2: Premiers Pas en JavaScript</h1>
+<p>Ouvrez la console (F12) pour voir les résultats</p>
+
+<script>
+
+    const a = 15;
+    const b = 4;
+    let result;
+
+    result = a + b;
+    console.log(` ${a} + ${b} = ${result}`)
+
+    result = a - b;
+    console.log(` ${a} - ${b} = ${result}`)
+
+    result = a * b;
+    console.log(` ${a} * ${b} = ${result}`)
+
+    result = a / b;
+    console.log(` ${a} / ${b} = ${result}`)
+
+    result = a % b;
+    console.log(` ${a} % ${b} = ${result}`)
+
+    result = a ** b;
+    console.log(` ${a} ** ${b} = ${result}`)
+
+
+    const note1 = 15;
+    const note2 = 12;
+    const note3 = 18;
+    const note4 = 14;
+    const note5 = 16;
+    let result2;
+
+    result2 = note1 + note2 + note3 + note4 + note5;
+    result2 /= 5;
+    console.log(result2.toFixed(2))
+
+
+    let tempCelsius = 25;
+    let F;
+    let K;
+
+    F = (25 * 9/5) + 32
+    console.log(`${F} Fahrenheit`)
+
+    K = 25 + 273.15
+    console.log(`${K} Kelvin`)
+
+
+</script>
+</body>
+</html>

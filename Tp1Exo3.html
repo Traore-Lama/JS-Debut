@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 1 - JavaScript</title>
+</head>
+<body>
+<h1>TP 1 Exo 3: Premiers Pas en JavaScript</h1>
+<p>Ouvrez la console (F12) pour voir les résultats</p>
+
+<script>
+    let agePersonne = 25;
+    let note = 18;
+    let mdp = "";
+
+    if (agePersonne >= 18)
+    {
+        console.log("Majeur")
+    }else
+    {
+      console.log("Mineur")
+    }
+
+
+    if (note >= 16)
+    {
+        console.log("Excelent")
+    }
+    else if(note >= 14)
+    {
+        console.log("Bien")
+    }
+    else if (note >= 12)
+    {
+        console.log("Assez Bien")
+    }
+    else if (note >= 10)
+    {
+        console.log("Passable")
+    }
+    else if(note < 10)
+    {
+        console.log("Insuffisant")
+    }
+
+
+
+    if (mdp.length < 8 || mdp === 123456 || mdp == "password")
+    {
+        console.log("Mot de Passe invalide")
+    }
+    else
+    {
+        console.log("Mot de Passe Valide")
+    }
+</script>
+</body>
+</html>

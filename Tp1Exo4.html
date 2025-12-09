@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 1 - JavaScript</title>
+</head>
+<body>
+<h1>TP 1 Exo 3: Premiers Pas en JavaScript</h1>
+<p>Ouvrez la console (F12) pour voir les résultats</p>
+
+<script>
+    let age = 17;
+    let compteActif = false;
+    let accompagne = false;
+
+    if(age >= 18 && compteActif || age < 18 && accompagne)
+    {
+        console.log("Accès autorisé")
+    }
+    else
+    {
+        console.log("Accès refusé")
+    }
+
+
+
+    let remise = 0;
+    let montant = 150;
+    let clientFidele = true;
+    let achatEnLigne = false;
+    let montantFinal = 0;
+
+    if (montant >= 100 && clientFidele && achatEnLigne)
+    {
+        remise = (montant * 0.10)+0.7
+    }
+    else if (montant >= 100 && clientFidele)
+    {
+        remise = (montant * 0.10)+0.5
+    }
+    else if (montant >= 100)
+    {
+        remise = montant * 0.10
+    }
+    montantFinal = montant - remise
+    console.log(`Votre montant final est : ${montantFinal}€`)
+    console.log(`Votre remise est de : ${remise}€`)
+</script>
+</body>
+</html>

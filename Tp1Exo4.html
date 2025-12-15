@@ -46,6 +46,34 @@
     montantFinal = montant - remise
     console.log(`Votre montant final est : ${montantFinal}€`)
     console.log(`Votre remise est de : ${remise}€`)
+
+    console.log("")
+
+    let nom = "";
+    let email = "";
+    let age2 = "";
+
+    if (nom !== "" && email.includes("@") && age2 >= 16 && age2 <= 100)
+    {
+        console.log("Formulaire valide")
+    }
+    if(!nom || !email.includes("@") || age2 < 16 || age2 > 100)
+    {
+        if (!nom)
+        {
+            console.log("Il manque votre nom")
+        }
+
+        if(!email.includes("@"))
+        {
+            console.log("Votre mail est mal renseigner")
+        }
+
+        if (age2 < 16 || age2 > 100)
+        {
+            console.log("Votre age n'ais pas compris entre 16 et 100")
+        }
+    }
 </script>
 </body>
 </html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 2 - Boucles JavaScript</title>
+</head>
+<body>
+<h1>TP 2 : Structures de Contrôle et Boucles</h1>
+<p>Ouvrez la console (F12) pour voir les résultats</p>
+
+<script>
+    // Votre code JavaScript ici
+    // Exo 1.1
+    for (let i = 1; i < 11; i++)
+    {
+        console.log(i)
+    }
+
+    console.log(" ")
+    console.log(" ")
+
+    for (let i = 2; i < 21; i++)
+    {
+        if (i % 2 == 0)
+        {
+            console.log(i)
+        }
+    }
+
+    console.log(" ")
+    console.log(" ")
+
+    for (let i = 15; i > 4; i--)
+    {
+        console.log(i)
+    }
+
+
+    // Exo 1.2
+    console.log(" ")
+    console.log(" ")
+
+
+    let nombre
+
+    nombre = prompt(" Entrer un nombre entre 1 et 12 SVP : ")
+    console.log(`=== Table de multiplication de ${nombre} ===`)
+    for (let i = 1; i <= 10; i++)
+    {
+        nombre * i
+        console.log(`${nombre} x ${i} = ${nombre * i}`)
+    }
+
+    // Exo 1.3
+    console.log(" ")
+    console.log(" ")
+
+    const nb = 6;
+    let total = 1;
+
+    for (let i = 1; i <= nb; i++)
+    {
+        total *= i
+
+    }
+    console.log(`${nb}! = ${total}`)
+
+    // Exo 1.4
+    console.log(" ")
+    console.log(" ")
+
+    let somme = 0;
+    let nbMultiples = 0;
+
+    for (let i = 1; i <= 99; i++)
+    {
+        if (i % 3 == 0 || i % 5 == 0)
+        {
+            somme += i
+        }
+    }
+    console.log(`Nombre de multiples trouver : ${nbMultiples}`)
+    console.log(`Total = ${somme}`)
+</script>
+</body>
+</html>

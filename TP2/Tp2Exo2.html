@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 2 - Boucles JavaScript</title>
+</head>
+<body>
+<h1>TP 2 : Structures de Contrôle et Boucles</h1>
+<p>Ouvrez la console (F12) pour voir les résultats</p>
+
+<script>
+    // Votre code JavaScript ici
+    // Exo 2.1
+    let choix = 0;
+
+    while (choix < 1 || choix > 100 || (isNaN(choix)))
+    {
+        choix = parseInt(prompt("Entrer un nombre entre 1 et 100 : "))
+        if (isNaN(choix))
+        {
+            console.log("Erreur !! : Vous devez saisir un nombre ")
+            break
+        }
+        else if (choix < 1)
+        {
+            console.log("Erreur !! : Vous devez saisir un nombre plus Grand")
+            break
+        }
+        else if (choix > 100)
+        {
+            console.log("Erreur !! : Vous devez saisir un nombre plus Petit")
+            break
+        }
+    }
+    console.log(`Votre nombre est : ${choix}`)
+
+</script>
+</body>
+</html>

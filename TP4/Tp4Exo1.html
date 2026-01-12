@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 4 - Tableaux et Analyse</title>
+</head>
+<body>
+<h1>TP 2 : Structures de Contrôle et Boucles</h1>
+<p>Ouvrez la console (F12) pour voir les résultats</p>
+
+<script>
+
+    const temperature = [22, 25, 19, 28, 24, 21, 26]
+    let resultat = 0;
+
+    // Moyenne de la Semaine
+    function tempSemaine (temperature){
+        let total = 0
+        for (let i = 0; i < temperature.length; i++){
+            total += temperature[i]
+        }
+        resultat = total / temperature.length
+        return resultat
+    }
+    console.log(`Temperature moyenne de la Semaine ${tempSemaine(temperature)}`)
+
+    // La plus elevee
+    function tempElevee(temperature){
+        let plusGrand = 0;
+        for (let i = 0; i < temperature.length; i++){
+            if (temperature[i] > plusGrand){
+                plusGrand = temperature[i]
+            }
+        }
+        return plusGrand
+    }
+    console.log(`La température la plus élevée ${tempElevee(temperature)}`)
+
+    // La plus Basse
+    function tempBas(temperature){
+        let petit = temperature[0];
+        for (let i = 0; i < temperature.length; i++){
+            if (temperature[i] < petit){
+                petit = temperature[i]
+            }
+        }
+        return petit
+    }
+    console.log(`La température la plus basse ${tempBas(temperature)}`)
+</script>
+</body>
+</html>

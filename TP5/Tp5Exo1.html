@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TP 5 - Json</title>
+</head>
+<body>
+<p>Ouvrez la console (F12) pour voir les résultats</p>
+<script>
+    // Exo 1.1
+    let etudiant1 = {
+        prenom: "Alice",
+        nom: "Dupont",
+        age: 20,
+        filiere: "SIO",
+        notes: [15, 17, 14, 16]
+    };
+    console.log(etudiant1.prenom)
+
+    let etudiant2 = {
+        prenom: "Bob",
+        nom: "Martin",
+        age: 19,
+        filiere: "SIO",
+        notes: [12, 14, 16, 13]
+    };
+    console.log(etudiant2.prenom)
+
+    let etudiant3 = {
+        prenom: "Charlie",
+        nom: "Durand",
+        age: 21,
+        filiere: "SIO",
+        notes: [18, 15, 17, 19]
+    };
+    console.log(etudiant3.prenom)
+
+
+    // Exo 1.2
+    let carnet = {
+        prenom: "Lama",
+        nom: "Traore",
+        telephone: "07 60 72 56 91",
+        email: "traorelama997@gmail.com",
+        adresse: {
+            rue: "Daniel Fery",
+            ville: "Montreuil",
+            codePostal: "93100"
+        },
+        estAmi: true ,
+    };
+    console.log(carnet.adresse.rue)
+
+    let carnet2 = {
+        prenom: "Mohamed",
+        nom: "Buffeteau",
+        telephone: "06 32 72 56 91",
+        email: "MomoB@gmail.com",
+        adresse: {
+            rue: "Marechant",
+            ville: "Paris",
+            codePostal: "75012"
+        },
+        estAmi: false ,
+    };
+    console.log(carnet2.adresse.ville)
+
+    let carnet3 = {
+        prenom: "Stephane",
+        nom: "Tiloult",
+        telephone: "07 67 53 37 83",
+        email: "Stiloult93@gmail.com",
+        adresse: {
+            rue: "Jean-Moulin",
+            ville: "Montreuil",
+            codePostal: "93100"
+        },
+        estAmi: true ,
+    };
+    console.log(carnet3.adresse.email)
+
+    // Exo 1.3
+    let produit = {
+        nom: "Ordinateur portable",
+        prix: 899,
+        marque: "Lenovo",
+        disponible: true,
+        categories: ["informatique", "bureautique"],
+        specifications:{
+            processeur: "",
+            ram: "",
+            stockage: ""
+        }
+    };
+    console.log(produit["prix"])
+    produit.prix = 799
+    console.log(produit.prix)
+    produit.marque = "MSI"
+    console.log(produit.marque)
+
+
+    // Exo 2.1
+    let calculette = {
+        marque: "Msi",
+        modele: "Mag Forge R",
+
+        additionner(a, b){
+            return(a + b)
+        },
+
+        soustraire(a, b){
+            return(a - b)
+        },
+
+        multiplier(a, b){
+            return(a * b)
+        },
+
+        diviser(a, b){
+            if (a <= 0 || b <= 0)
+            {
+                return("Veuillez entrer un valeur plus haute")
+            }
+            return(a / b)
+        },
+
+         afficherInfo(){
+            return(calculette)
+         }
+    }
+    console.log(calculette.additionner(7,8))
+    console.log(calculette.soustraire(8,7))
+    console.log(calculette.multiplier(7,8))
+    console.log(calculette.diviser(7,8))
+    console.log(calculette.afficherInfo())
+
+</script>
+</body>
+</html>
